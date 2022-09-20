@@ -27,7 +27,7 @@ class ConverterWindow:
 
         self.from_choices = StringVar()
         self.combobox_from = ttk.Combobox(self.frame, textvariable=self.from_choices)
-        self.combobox_from['values'] = ['UTF-8', 'Base64', 'HTML', 'Unicode']
+        self.combobox_from['values'] = ['UTF-8', 'Base64', 'HTML', '%Char', 'Unicode']
         self.combobox_from.state(["readonly"])
         self.combobox_from.current(0)
         self.combobox_from.grid(column=1, row=0, sticky=W)
@@ -41,7 +41,7 @@ class ConverterWindow:
 
         self.to_choices = StringVar()
         self.combobox_to = ttk.Combobox(self.frame, textvariable=self.to_choices)
-        self.combobox_to['values'] = ['UTF-8', 'Base64', 'HTML', 'Unicode']
+        self.combobox_to['values'] = ['UTF-8', 'Base64', 'HTML', '%Char', 'Unicode']
         self.combobox_to.state(["readonly"])
         self.combobox_to.current(0)
         self.combobox_to.grid(row=0, column=4, sticky=E)
